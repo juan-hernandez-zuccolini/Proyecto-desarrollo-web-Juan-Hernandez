@@ -9,7 +9,7 @@ html{
 }
 .header{
     display: flex;
-    background-color: #dbfca6;
+    background-image: linear-gradient(#8f6334bd, rgb(191, 224, 150));
     width: 1920px;
     height: 150px;
 }
@@ -67,7 +67,6 @@ nav{
     width: 100%;
     height: 80px;
     text-align: center;
-    background-color: hsl(83, 93%, 82%);  
     padding-left: 300px;
     padding-top: 50px;
     margin: 0;
@@ -153,7 +152,7 @@ nav{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: auto;
-    background-color: #ffff92;
+    background-image: linear-gradient(#ffff92, #ffffbd);
     width: 1550px;
     padding: 30px;
 }
@@ -217,7 +216,7 @@ nav{
     justify-content: space-evenly;
     width: 1920px;
     height: 350px;
-    background-color: rgb(255, 255, 146);
+    background-image: linear-gradient(#ffffbd, #ffff92);
 }
 .local{
     background-color: rgba(0, 0, 0, 0.165);
@@ -241,7 +240,7 @@ nav{
     border-radius: 10px;
 }
 footer{
-    background-color: rgb(134, 204, 134);
+    background-image: linear-gradient(rgb(191, 224, 150), #8f6334bd);
     text-align: center;
     width: 1920px;
     height: 150px;
@@ -295,6 +294,7 @@ footer{
     height: calc(100vh - 300px);
 }
 .formulario{
+    margin: 0;
     width: auto;
     background-color: rgb(255, 255, 146);
     padding: 25px;
@@ -316,9 +316,11 @@ fieldset{
     border-radius: 3px;
 }
 .fondoContacto{
+    margin: 0;
     width: 100%;
     height: auto;
-    background-image: url(/multimedia/Contacto/fondoContacto.jpg);
+    /* background-image: url(/multimedia/Contacto/fondoContacto.jpg); */
+    background-image: linear-gradient(to right, rgb(255, 255, 146),rgba(255, 255, 255, 0.015) 90%), url(/multimedia/Contacto/fondoContacto.jpg);
     background-size: cover;
     background-position: center;
 }
