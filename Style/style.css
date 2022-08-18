@@ -20,6 +20,20 @@ html{
     left: 15px;
     width: auto;
     height: 120px;
+    animation-name: logoexpande;
+    animation-duration: 2s;
+}
+@keyframes logoexpande{
+    0%{
+        opacity: 0;
+        width: auto;
+        height: 500px;
+    }
+    100%{
+        width: auto;
+        height: 120px;
+        opacity: 1;
+    }
 }
 .separador{
     width: 500px;
@@ -142,9 +156,11 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(11, 77, 11);
     text-decoration: none;
+    transition: 1s;
 }
 .indice a:hover{
     color: #8f6334;
+    font-size: 25px;
 }
 .contprod{
     grid-area: prod;
